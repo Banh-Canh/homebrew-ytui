@@ -5,20 +5,20 @@
 class Ytui < Formula
   desc "An interactive Kubernetes log viewer for your terminal."
   homepage "https://github.com/banh-can/ytui"
-  version "1.0.0"
+  version "1.0.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Banh-Canh/ytui/releases/download/v1.0.0/ytui_v1.0.0_Darwin_x86_64.tar.gz"
-      sha256 "001efbae9347f3bd5995d1a5b478579c61a46254e790e3e462de62f5a4ce1118"
+      url "https://github.com/Banh-Canh/ytui/releases/download/v1.0.1/ytui_v1.0.1_Darwin_x86_64.tar.gz"
+      sha256 "a56c62386ef5ddac359de0808f770c82480a2bc1039159d83acef16371f44bdb"
 
       def install
         bin.install "ytui"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Banh-Canh/ytui/releases/download/v1.0.0/ytui_v1.0.0_Darwin_arm64.tar.gz"
-      sha256 "7f5ec7df320192cb8a934617b51ae799ada1f44db91aca1d9ddcd672cd9a55bc"
+      url "https://github.com/Banh-Canh/ytui/releases/download/v1.0.1/ytui_v1.0.1_Darwin_arm64.tar.gz"
+      sha256 "9ef69fe718a82fbb959ad8f4ff69219922606b1037e91be58b769425a7d7a5a2"
 
       def install
         bin.install "ytui"
@@ -28,22 +28,22 @@ class Ytui < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Banh-Canh/ytui/releases/download/v1.0.0/ytui_v1.0.0_Linux_x86_64.tar.gz"
-      sha256 "d25fadd79d0471ebe04f69bbe242c284919df4037d1883045d74812643b16e5a"
+      url "https://github.com/Banh-Canh/ytui/releases/download/v1.0.1/ytui_v1.0.1_Linux_x86_64.tar.gz"
+      sha256 "2eb0618da80c1484739958efb860af38395f6f54e31b348763fbfc6ae721a779"
       def install
         bin.install "ytui"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/Banh-Canh/ytui/releases/download/v1.0.0/ytui_v1.0.0_Linux_armv6.tar.gz"
-      sha256 "f469b77db2386b522b60e0511d0c2467cbd0264ce2caf90147f65a42b25f30ae"
+      url "https://github.com/Banh-Canh/ytui/releases/download/v1.0.1/ytui_v1.0.1_Linux_armv6.tar.gz"
+      sha256 "42594f956e11f01f9c49f08d261a4fbb7b36965f03ffbd456b9e37d8ffcd97a1"
       def install
         bin.install "ytui"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Banh-Canh/ytui/releases/download/v1.0.0/ytui_v1.0.0_Linux_arm64.tar.gz"
-      sha256 "03410355a63f8b771d6de4ea206ae3ab65ef605123daa49e09e7ef927ccecace"
+      url "https://github.com/Banh-Canh/ytui/releases/download/v1.0.1/ytui_v1.0.1_Linux_arm64.tar.gz"
+      sha256 "8354b0ec22c63587f0b188bc33ba53c78883a22788701a8353395b563968babb"
       def install
         bin.install "ytui"
       end
